@@ -1,0 +1,33 @@
+html{height:100%;}
+body{height:100%;margin:0;background:#f5f5f5;font-family:Helvetica,Arial,sans-serif,simsun;font-size:16px;color:#676a6c;}
+/* 顶部 */
+.top{position:fixed;height:50px;background-image: linear-gradient(to right,#1181D5,#08B3DE);width:100%;color:#eee;z-index:1;min-width:400px;}
+.top-title{height:100%;line-height:50px;text-indent:12px;float:left;}
+.icon-home:before{font-family:dashicons;content:"\f102";font-size:18px;position:relative;top:2px;margin-right:4px;}
+.top-right{float:right;}
+.top-right a{color:#fff;text-decoration:none;margin-right:20px;line-height:50px;}
+.top-right a:hover{color:#fff;}
+/* 顶部以下 */
+.main{padding-top:50px;position:fixed;bottom:0;top:0;right:0;left:0;}
+/* 左侧导航 */
+.nav{position:fixed;width:160px;min-height:100%;background-image: linear-gradient(to right,#1080D6,#08B3DE);color:#fff;}
+.nav a{height:34px;line-height:24px;display:block;color:#eee;text-decoration:none;text-indent:12px;font-size:16px;}
+.nav a:hover{color:#00b9eb;background-color:#191e23;}
+.nav a.curr{background:#0073aa;position:relative;color:#fff;}
+.nav a.curr:hover{color:#fff;background:#0073aa;}
+.nav a:before{font-family:dashicons;margin-right:8px;font-size:20px;color:rgba(240,245,250,.6);position:relative;top:5px;}
+.nav a.curr:before{color:#fff;}
+.nav a.curr:hover:before{color:#fff}
+.nav a:hover:before{color:#00b9eb;}
+.nav a.curr:after{right:0;border:8px solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-right-color:#f1f1f1;top:50%;margin-top:-8px;}
+.icon-index:before{content:"\f226";}
+.icon-add:before{content:"\f119";}
+.icon-article:before{content:"\f498";}
+.icon-category:before{content:"\f105";}
+.photo{cursor:pointer;color:#eee;height:72px;text-indent:20px;line-height:52px;}
+.icon-admin:before{content: "\f110";font-family:dashicons;font-size:32px;position:relative;top:12px;margin-right:10px;}
+.photo:hover{background-color:#191e23;}
+.photo:hover{color:#fff;}
+/* 内容区域 */
+.content{height:100%;margin-left:160px;}
+.content iframe{width:100%;height:100%;}

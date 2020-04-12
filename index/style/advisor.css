@@ -1,0 +1,280 @@
+* {
+	padding: 0px;
+	margin: 0 auto;
+	 box-sizing: border-box;
+}
+body {
+	background-image: url(../images/bg5.jpg);
+	background-size:100% 900px;
+	background-repeat: no-repeat;
+	background-position:top;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.8;
+}
+
+header{
+	width: 100%;
+	height: 30px;
+	/* border: 1px solid; */
+	float: left;
+	margin-top:5px;
+}
+
+header>img{
+	height: 80px;
+}
+
+@keyframes mymove
+{
+	0%{top:10px;}
+
+	100%{top:550px;}
+}
+section {
+	width: 50%;
+	height: 550px;
+	position: absolute;
+	left: 25%;
+	top: 130px;
+}
+.right {
+	width: 80%;
+	height: 550px;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.7);
+	text-align: center;
+}
+h1{
+	width:100%;
+	font-size: 30px;
+	font-family: '楷体';
+	font-weight: 800;
+	color: #3790F5;
+	cursor: pointer;
+	position: relative;
+	top: 20px;
+}
+h1 img {
+	width: 100%;
+	height:200px; 
+	margin-top: 20px;
+}
+
+.active {
+	background: #04b0e2;
+	color: #fff;
+	cursor: pointer;
+}
+
+form{
+	height: 50px;
+	opacity: 0.9;
+	margin-top: 50px;
+}
+
+.on {
+	display: block;
+}
+.list{
+	width: 50%;
+	height: 40px;
+	background: rgba(255,255,255,0.9);
+	border: 1px solid #fff;
+	border-radius: 10px;
+	margin-bottom:30px;
+}
+.list:hover {
+	width: 66%;
+	height: 50px;
+}
+.list:hover input{
+	margin-top: 5px;
+}
+.list:hover .fa-user,.list:hover .fa-lock {
+	margin-top: 15px;
+}
+
+.fa-user{
+	float: left;
+	margin-left: 10px;
+	color: #04b0e2;
+	margin-top: 12px;
+}
+
+.fa-lock{
+	float: left;
+	margin-left: 10px;
+	color: #04b0e2;
+	margin-top: 12px;
+}
+
+input{
+	border: none;
+	outline: none;
+	width: 60%;
+	height: 40px;
+	float: left;
+	margin-left: 10px;
+	background: none;
+}
+
+.btn{
+	width: 30%;
+	height: 50px;
+	border-radius: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	background:#3790F5;
+	border: 1px solid #6FB9ED;
+	color: #fff;
+}
+.btn:hover {
+	background: blue;
+}
+
+/* 小方形上飘 */
+.container ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+.container ul li {
+    list-style-type: none;
+    display: block;
+    position: absolute;
+    bottom: -120px;
+    width: 15px;
+    height: 15px;
+    z-index: -8;
+    background-color:rgba(255, 255, 255, 0.3);
+    animation: square 25s infinite;
+    -webkit-animation: square 25s infinite;
+}
+.container ul li:nth-child(1) {
+   	left: 0;
+    animation-duration: 10s;
+    -moz-animation-duration: 10s;
+    -o-animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+}
+.container ul li:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 15s;
+    -moz-animation-duration: 15s;
+    -o-animation-duration: 15s;
+    -webkit-animation-duration: 15s;
+}
+.container ul li:nth-child(3) {
+    left: 20%;
+    width: 25px;
+    height: 25px;
+    animation-duration: 12s;
+    -moz-animation-duration: 12s;
+    -o-animation-duration: 12s;
+    -webkit-animation-duration: 12s;
+}
+        .container ul li:nth-child(4) {
+            width: 50px;
+            height: 50px;
+            left: 30%;
+            -webkit-animation-delay: 3s;
+            -moz-animation-delay: 3s;
+            -o-animation-delay: 3s;
+            animation-delay: 3s;
+            animation-duration: 12s;
+            -moz-animation-duration: 12s;
+            -o-animation-duration: 12s;
+            -webkit-animation-duration: 12s;
+        }
+        .container ul li:nth-child(5) {
+            width: 60px;
+            height: 60px;
+            left: 40%;
+            animation-duration: 10s;
+            -moz-animation-duration: 10s;
+            -o-animation-duration: 10s;
+            -webkit-animation-duration: 10s;
+        }
+        .container ul li:nth-child(6) {
+            width: 75px;
+            height: 75px;
+            left: 50%;
+            -webkit-animation-delay: 7s;
+            -moz-animation-delay: 7s;
+            -o-animation-delay: 7s;
+            animation-delay: 7s;
+        }
+        .container ul li:nth-child(7) {
+            left: 60%;
+            animation-duration: 8s;
+            -moz-animation-duration: 8s;
+            -o-animation-duration: 8s;
+            -webkit-animation-duration: 8s;
+        }
+        .container ul li:nth-child(8) {
+            width: 40px;
+            height: 40px;
+            left: 70%;
+            -webkit-animation-delay: 4s;
+            -moz-animation-delay: 4s;
+            -o-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+        .container ul li:nth-child(9) {
+            width: 60px;
+            height: 60px;
+            left: 80%;
+            animation-duration: 20s;
+            -moz-animation-duration: 20s;
+            -o-animation-duration: 20s;
+            -webkit-animation-duration: 20s;
+        }
+        .container ul li:nth-child(10) {
+            width: 45px;
+            height: 45px;
+            left: 90%;
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            -o-animation-delay: 6s;
+            animation-delay: 6s;
+            animation-duration: 30s;
+            -moz-animation-duration: 30s;
+            -o-animation-duration: 30s;
+            -webkit-animation-duration: 30s;
+        }
+
+        @keyframes square {
+            0%  {
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0)
+                }
+            100% {
+                    bottom: 100%;
+                    transform: rotate(600deg);
+                    -webit-transform: rotate(600deg);
+                    -webkit-transform: translateY(-500);
+                    transform: translateY(-500)
+            }
+        }
+        @-webkit-keyframes square {
+            0%  {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+            100% {
+                bottom: 100%;
+                transform: rotate(600deg);
+                -webit-transform: rotate(600deg);
+                -webkit-transform: translateY(-500);
+                transform: translateY(-500)
+            }
+        }

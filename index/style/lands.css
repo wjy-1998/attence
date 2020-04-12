@@ -1,0 +1,142 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+
+body{
+	background-image: url(../images/bg.jpg);
+	background-size:100% 950px;
+	background-repeat: no-repeat;
+	background-position:top;
+
+}
+
+#container{
+	width: 100%;
+	height:100%;
+	/* border: 1px solid red; */
+	float: left;
+
+}
+
+header{
+	width: 100%;
+	height: 30px;
+	/* border: 1px solid; */
+	float: left;
+	margin-top:5px;
+}
+
+header>img{
+	height: 80px;
+}
+
+section{
+	width: 100%;
+	clear: both;
+	float: left;
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+#img1{
+	position: absolute;
+	top: 10px;
+	left: 590px;
+	animation:mymove 5s infinite;
+	z-index: -1;
+}
+
+@keyframes mymove
+{
+	0%{top:10px;}
+
+	100%{top:550px;}
+}
+
+.top{
+	width: 32%;
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid #fff;
+}
+
+h1{
+	display: block;
+	width:50%;
+	font-size: 24px;
+	float: left;
+	background: #E2F3FD;
+	font-family: '楷体';
+	cursor: pointer;
+}
+
+.active {
+	background: #04b0e2;
+	color: #fff;
+	cursor: pointer;
+}
+
+form{
+	width: 35%;
+	height: 250px;
+	border: 1px solid #fff;
+	background: #fff;
+	opacity: 0.9;
+	display: none;
+	
+}
+
+.on {
+	display: block;
+}
+
+/* #form1{
+	display:none;
+
+} */
+
+
+.list{
+	width: 70%;
+	height: 40px;
+	background: #fff;
+	border: 1px solid;
+	border-radius: 10px;
+	margin-top:25px;
+}
+
+.fa-user{
+	float: left;
+	margin-left: 10px;
+	color: #CDCDCD;
+	margin-top: 12px;
+}
+
+.fa-lock{
+	float: left;
+	margin-left: 10px;
+	color: #CDCDCD;
+	margin-top: 12px;
+}
+
+input{
+	border: none;
+	outline: none;
+	width: 70%;
+	height: 30px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.btn{
+	width: 70%;
+	height: 40px;
+	font-size: 16px;
+	background:#6FB9ED;
+	border: 1px solid #6FB9ED;
+	margin-top:25px;
+	color: #fff;
+}

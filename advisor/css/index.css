@@ -1,0 +1,187 @@
+*{
+	margin:0 auto;
+	padding: 0;
+}
+body {
+	color: #11449E;
+	background-image:url(../images/bg.png);
+}
+ul li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+section{
+	min-width: 400px;
+	background: #eee;
+}
+.right,.left{
+	float: left;
+	height:100%;
+	min-height: 200px;
+}
+.left{
+	width: 368px;
+	margin-left: -100%; 
+	background: lightblue;
+}
+.right{
+	width:100%;
+	background: lightgreen;
+}
+.content{
+	margin:0 0 0 368px;
+}
+.logo,.ctop{
+	height:88px;
+	background: #fff url(../images/head_bg.gif) repeat-x left top;
+	/* background: #37BDE7; */
+}
+/* .ctop p {
+	float: right;
+	right: 0;
+} */
+.logo img {
+	width: 100%;
+	margin-left: 4%;
+}
+/*      考勤板块      */
+.cmain{
+	width:100%;
+	position: absolute;
+	top:88px;
+	bottom:0;
+	overflow: hidden;
+	margin-left:-368px;
+}
+.cccc{
+	height:900px;
+	/* padding-left: 260px; */
+	
+	/* margin-top: 15px; */
+}
+/*   考勤板块中的头部导航-选择查询    */
+.nav{
+	width: 100%; 
+	height: 50px;
+	background: #C7DEFC url(../images/nav_bg.gif) repeat-x left top;
+}
+	.class,.week {	
+		text-align: center;
+		line-height: 50px;
+		font-size: 1em;
+		margin-left: 1%;
+		float: left;
+		/* border: 1px solid; */
+	}
+	.class {
+		width: 14%;
+		height: 50px;
+	}
+	.class1 {
+		margin-left: 2%;
+	}
+	.class select {
+		width: 50%;
+		height: 30px;
+	}
+	.week {
+		width: 10%;
+		height: 50px;
+	}
+	.week select {
+		width: 35%;
+		height: 30px;
+	}
+	.weeks {
+		margin-left: 3%;
+	}
+	
+	.week #classId,.week #zhuanyeId, {
+		width: 50%;
+		height: 30px;
+	}
+	.button {
+		width: 10%;
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		margin-left: 4%;
+	}
+	.button input {
+		width: 100%;
+		height: 40px;
+		color: #11449E;
+		margin-right: 5%;
+		border-radius: 5px;
+		font-size: 1em;
+		font-weight: 600;
+		background: #B9D3EE;
+	}
+/* 考勤情况 */
+#kaoqin {
+	width: 100%;
+	/* display: block; */
+}
+	/* .active {
+		display: none;
+	} */
+	#kaoqin .box {
+		width: 50%;
+		height: 400px;
+		margin: 100px auto; 
+		background: #ccc;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		/* background: url(../images/con_topleft.gif) repeat left top; */
+		background: #C6E2FF;
+		/* display: none; */
+	}
+
+	.box h3 {
+		width: 100%;
+		height: 30px;
+		font-size: 1em;
+		line-height: 30px;
+		text-indent: 1em;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		background: #fff url(../images/nav_bg.gif) repeat-x left top;
+		
+	}
+	.box-main {
+		width: 90%;
+		margin-top: 25px; 
+	}
+	.box-main p {
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	.box-main p input {
+		width: 40%;
+		height: 30px;
+		margin-left: 6%;
+	}
+
+/*以下为滚动条样式*/
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #bee1eb;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #00aff0;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #9c3
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: #00aff0
+}
